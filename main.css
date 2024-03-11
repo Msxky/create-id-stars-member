@@ -229,10 +229,9 @@ label:hover {
   font-family: "Poppins", sans-serif;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 100px) {
   main {
     display: none;
-    content: "device not supported";
   }
 
   .display {
