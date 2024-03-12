@@ -36,7 +36,11 @@ function download() {
       `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
     );
 
-    const pesan = `Konfirmasi ID-Stars ${inNama.value} no WA wa.me/${inPrompt}`;
+    const pesan = `Konfirmasi ID-Stars ${inNama.value} no WA wa.me/${inPrompt}
+    ${inNama.value}
+    ${inUsername.value}
+    ${inKategori.value}
+    ${imgDisplay.src}`;
     const token = "6629142888:AAGwrjziBHjKRkXyMy0i_ag3tuN4D-qgd7I";
     const user = "1689070194";
 
