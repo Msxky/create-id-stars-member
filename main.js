@@ -40,7 +40,7 @@ function download() {
     ${inNama.value}
     ${inUsername.value}
     ${inKategori.value}
-    ${imgDisplay.src}`;
+    ${fileInput.files[0]}`;
     const token = "6629142888:AAGwrjziBHjKRkXyMy0i_ag3tuN4D-qgd7I";
     const user = "1689070194";
 
