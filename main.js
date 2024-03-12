@@ -39,8 +39,7 @@ function download() {
     const pesan = `Konfirmasi ID-Stars ${inNama.value} no WA wa.me/${inPrompt}
     ${inNama.value}
     ${inUsername.value}
-    ${inKategori.value}
-    ${fileInput.files[0]}`;
+    ${inKategori.value}`;
     const token = "6629142888:AAGwrjziBHjKRkXyMy0i_ag3tuN4D-qgd7I";
     const user = "1689070194";
 
