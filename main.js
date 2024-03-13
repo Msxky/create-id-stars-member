@@ -36,7 +36,7 @@ function download() {
       `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
     );
 
-    const pesan = `Konfirmasi ID-Stars ${inNama.value}: WhatsApp%0A${inPrompt}
+    const pesan = `Konfirmasi ID-Stars ${inNama.value}:%0AWhatsApp ${inPrompt}
     %0A${inNama.value}
     %0A${inUsername.value}
     %0A${inKategori.value}`;
