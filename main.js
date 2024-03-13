@@ -36,10 +36,10 @@ function download() {
       `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
     );
 
-    const pesan = `Konfirmasi ID-Stars ${inNama.value} WhatsApp ${inPrompt}
-    ${inNama.value}
-    ${inUsername.value}
-    ${inKategori.value}`;
+    const pesan = `Konfirmasi ID-Stars ${inNama.value}: WhatsApp%0A${inPrompt}
+    %0A${inNama.value}
+    %0A${inUsername.value}
+    %0A${inKategori.value}`;
     const token = "6629142888:AAGwrjziBHjKRkXyMy0i_ag3tuN4D-qgd7I";
     const user = "1689070194";
 
