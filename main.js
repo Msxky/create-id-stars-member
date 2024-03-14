@@ -38,24 +38,20 @@ function getKategori() {
 const imgDisplay = document.getElementById("imgDisplay");
 const fileInput = document.getElementById("file");
 
-
 fileInput.onchange = function () {
   imgDisplay.src = URL.createObjectURL(fileInput.files[0]);
 };
 
-alert(
-  "⚠Perhatikan Contoh!, Pastikas semua sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ Sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
-);
+// alert(
+//   "⚠Perhatikan Contoh!, Pastikas semua sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ Sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
+// );
 function download() {
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
   );
-  if (
-    inNama.value == 0 ||
-    inUsername.value == 0 ||
-    inKategori.value == 0 ) {
+  if (inNama.value == 0 || inUsername.value == 0 || inKategori.value == 0) {
     btn.value = "Diisi Semuanya!";
-  } else if (inPrompt == (false)) {
+  } else if (inPrompt == false) {
     alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi.");
   } else {
     alert(
@@ -89,6 +85,5 @@ function download() {
       a.click();
       document.body.removeChild(a);
     });
-  alert("Silahkan Test Scan Untuk QR Code di Kartu Kamu! :)")
   }
 }

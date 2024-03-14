@@ -52,7 +52,6 @@ header h6 {
   margin: 2rem;
   border: 2px solid var(--primary-color);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, var(--primary-color) 0px 30px 60px -30px, var(--primary-color) 0px -2px 6px 0px inset;
-  /* background: var(--secondary-color); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +112,7 @@ header h6 {
   justify-content: space-evenly;
 }
 
-.card img {
+.card #imgDisplay {
   /* background: red;   */
   width: 180px;
   height: 180px;
@@ -152,7 +151,6 @@ i {
 }
 
 .stars {
-  /* background: red; */
   display: flex;
   padding: 5px 0;
   text-align: center;
@@ -162,20 +160,12 @@ i {
   margin-bottom: 1rem;
 }
 
-.stars img {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-}
-
 span {
   /* font-size: 10px; */
   font-weight: 600;
 }
 
-.stars img {
+.stars #qrCode {
   height: 50px;
   width: 50px;
 }
