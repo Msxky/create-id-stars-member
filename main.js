@@ -44,6 +44,7 @@ function download() {
   }else if(inPrompt == (false)){
     alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi") 
   }else{
+    alert("Done✅, data akan di cek terlebih dahulu. silahkan cek data kamu di 'starsmember.vercel.app' 24 jam setelah create ID :).") 
     const pesan = `Konfirmasi ID-Stars: ${inNama.value}
     %0A WhatsApp: ${inPrompt}
     %0A Nama Akun: ${inNamaAkun.value}
