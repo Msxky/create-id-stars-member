@@ -42,7 +42,7 @@ const imgQr = document.getElementById("qrCode");
 const API = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=`;
 
 alert(
-  "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
+  "⚠Perhatikan Contoh!, Pastikas semua sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ Sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
 );
 function download() {
   imgQr.src = `${API}tiktok.com/@${inUsername.value}`;
@@ -56,7 +56,7 @@ function download() {
     inputQr.value == 0
   ) {
     btn.value = "Diisi Semuanya!";
-  } else if (inPrompt == false) {
+  } else if (inPrompt == (false)) {
     alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi.");
   } else {
     alert(
@@ -90,7 +90,6 @@ function download() {
       a.click();
       document.body.removeChild(a);
     });
-
   alert("Silahkan Test Scan Untuk QR Code di Kartu Kamu! :)")
   }
 }
