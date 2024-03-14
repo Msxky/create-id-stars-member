@@ -44,8 +44,8 @@ const API = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=`;
 alert(
   "⚠Perhatikan Contoh!, Pastikas semua sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ Sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
 );
-imgQr.src = `${API}tiktok.com/@${inUsername.value}`;
 function download() {
+  imgQr.src = `${API}tiktok.com/@${inUsername.value}`;
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
   );
