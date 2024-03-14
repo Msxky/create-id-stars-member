@@ -35,16 +35,21 @@ fileInput.onchange = function () {
   imgDisplay.src = URL.createObjectURL(fileInput.files[0]);
 };
 
+alert(
+  "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ dan (ketegori) Wajib huruf kapital di kalimat utama serta Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
+);
 function download() {
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
   );
   if (inNama.value == 0 || inUsername.value == 0 || inKategori.value == 0) {
     btn.value = "Diisi Semuanya!";
-  }else if(inPrompt == (false)){
-    alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi") 
-  }else{
-    alert("Done✅, data akan di cek terlebih dahulu. silahkan cek data kamu di 'starsmember.vercel.app' 24 jam setelah create ID :).") 
+  } else if (inPrompt == false) {
+    alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi.");
+  } else {
+    alert(
+      "Done✅, data akan di cek terlebih dahulu. silahkan cek data kamu di ('starsmember.vercel.app') 24 jam setelah create ID :)"
+    );
     const pesan = `Konfirmasi ID-Stars: ${inNama.value}
     %0A WhatsApp: ${inPrompt}
     %0A Nama Akun: ${inNamaAkun.value}
@@ -61,9 +66,9 @@ function download() {
 
     let id = document.getElementById("card");
     id.style.transform = "scale(3)";
-    id.style.background = "var(--secondary-color)"
+    id.style.background = "var(--secondary-color)";
     html2canvas(id).then((canvas) => {
-      id.style.background = "transparent"
+      id.style.background = "transparent";
       id.style.transform = "scale(1)";
       const url = canvas.toDataURL();
       const a = document.createElement("a");
