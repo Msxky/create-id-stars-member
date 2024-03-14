@@ -36,14 +36,14 @@ fileInput.onchange = function () {
 };
 
 function download() {
+  const inPrompt = prompt(
+    `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
+  );
   if (inNama.value == 0 || inUsername.value == 0 || inKategori.value == 0) {
     btn.value = "Diisi Semuanya!";
-  } else {
-    const inPrompt = prompt(
-      `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
-    );
-
-
+  }else if(inPrompt == (false)){
+    alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi") 
+  }else{
     const pesan = `Konfirmasi ID-Stars: ${inNama.value}
     %0A WhatsApp: ${inPrompt}
     %0A Nama Akun: ${inNamaAkun.value}

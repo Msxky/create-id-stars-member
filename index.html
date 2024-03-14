@@ -35,6 +35,7 @@
                 id="inNamaAkun"
                 oninput="getNameAkun()"
                 placeholder="Nama Akun"
+                required
               />
             </div>
             <input
@@ -42,13 +43,24 @@
               id="inUsername"
               oninput="getUsername()"
               placeholder="Username"
+              required
             />
             <input
               type="text"
+              list="Kategori"
               id="inKategori"
               oninput="getKategori()"
               placeholder="Kategori"
+              required
             />
+            <datalist id="Kategori">
+              <option value="Lyrics"></option>
+              <option value="Quotes"></option>
+              <option value="Podcast"></option>
+              <option value="K-drama"></option>
+              <option value="Mentahan"></option>
+            </datalist>
+
             <label for="file">chose image</label>
             <input
               type="file"
