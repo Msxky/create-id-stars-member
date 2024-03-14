@@ -1,3 +1,6 @@
+const created = document.getElementById("created");
+created.textContent = "32 Created..";
+
 const inNama = document.getElementById("inNama");
 const inNamaAkun = document.getElementById("inNamaAkun");
 const inUsername = document.getElementById("inUsername");
@@ -35,9 +38,9 @@ fileInput.onchange = function () {
   imgDisplay.src = URL.createObjectURL(fileInput.files[0]);
 };
 
-alert(
-  "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
-);
+// alert(
+//   "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
+// );
 function download() {
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
