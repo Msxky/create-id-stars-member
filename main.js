@@ -38,14 +38,23 @@ fileInput.onchange = function () {
   imgDisplay.src = URL.createObjectURL(fileInput.files[0]);
 };
 
-// alert(
-//   "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
-// );
+const imgQr = document.getElementById("qrCode");
+const API = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=`;
+
+alert(
+  "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
+);
 function download() {
+  imgQr.src = `${API}tiktok.com/@${inUsername.value}`;
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
   );
-  if (inNama.value == 0 || inUsername.value == 0 || inKategori.value == 0) {
+  if (
+    inNama.value == 0 ||
+    inUsername.value == 0 ||
+    inKategori.value == 0 ||
+    inputQr.value == 0
+  ) {
     btn.value = "Diisi Semuanya!";
   } else if (inPrompt == false) {
     alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi.");
@@ -81,5 +90,7 @@ function download() {
       a.click();
       document.body.removeChild(a);
     });
+
+  alert("Silahkan Test Scan Untuk QR Code di Kartu Kamu! :)")
   }
 }

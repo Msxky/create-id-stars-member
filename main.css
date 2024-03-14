@@ -156,10 +156,18 @@ i {
   display: flex;
   padding: 5px 0;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-bottom: 2px solid var(--primary-color);
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.stars img {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 span {
