@@ -23,12 +23,20 @@
       <div class="content">
         <div class="content-1">
           <div class="input">
-            <input
-              type="text"
-              id="inNama"
-              oninput="getName()"
-              placeholder="Nama"
-            />
+            <div class="nama">
+              <input
+                type="text"
+                id="inNama"
+                oninput="getName()"
+                placeholder="Nama"
+              />
+              <input
+                type="text"
+                id="inNamaAkun"
+                oninput="getNameAkun()"
+                placeholder="Nama Akun"
+              />
+            </div>
             <input
               type="text"
               id="inUsername"
@@ -69,13 +77,16 @@
                   <h2>StarsMusic ☆</h2>
                 </div>
                 <h3>
-                  <pre>Nama            : <span id="nama"></span></pre>
+                  <pre>Nama             : <span id="nama"></span></pre>
                 </h3>
                 <h3>
-                  <pre>Username    : <span id="username"></span></pre>
+                  <pre>Nama Akun  : <span id="namaAkun"></span></pre>
                 </h3>
                 <h3>
-                  <pre>Kategori        : <span id="kategori"></span></pre>
+                  <pre>Username     : <span id="username"></span></pre>
+                </h3>
+                <h3>
+                  <pre>Kategori         : <span id="kategori"></span></pre>
                 </h3>
               </div>
             </div>

@@ -68,6 +68,12 @@ header h6 {
   margin: 1rem;
 }
 
+.nama {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
 .input input {
   margin: .5rem 0;
   color: #FFFFFF;

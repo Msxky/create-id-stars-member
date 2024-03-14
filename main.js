@@ -1,4 +1,5 @@
 const inNama = document.getElementById("inNama");
+const inNamaAkun = document.getElementById("inNamaAkun");
 const inUsername = document.getElementById("inUsername");
 const inKategori = document.getElementById("inKategori");
 const btn = document.getElementById("down");
@@ -7,6 +8,12 @@ function getName() {
   const inNama = document.getElementById("inNama");
   const nama = document.getElementById("nama");
   nama.textContent = inNama.value;
+}
+
+function getNameAkun() {
+  const inNamaAkun = document.getElementById("inNamaAkun");
+  const namaAkun = document.getElementById("namaAkun");
+  namaAkun.textContent = inNamaAkun.value;
 }
 
 function getUsername() {
@@ -36,10 +43,11 @@ function download() {
       `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
     );
 
-    const pesan = `Konfirmasi ID-Stars ${inNama.value} no WA wa.me/${inPrompt}
-    ${inNama.value}
-    ${inUsername.value}
-    ${inKategori.value}`;
+    const pesan = `Konfirmasi ID-Stars: ${inNama.value}
+    %0A WhatsApp: ${inPrompt}
+    %0A Nama Akun: ${inNamaAkun.value}
+    %0A Username: ${inUsername.value}
+    %0A Kategori: ${inKategori.value}`;
     const token = "6629142888:AAGwrjziBHjKRkXyMy0i_ag3tuN4D-qgd7I";
     const user = "1689070194";
 
