@@ -36,7 +36,7 @@ fileInput.onchange = function () {
 };
 
 alert(
-  "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ dan (ketegori) Wajib huruf kapital di kalimat utama serta Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
+  "⚠Perhatikan Contoh!, Pastikas Semua Sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil picture wajib sama dengan akun TikTok. OK Let's Create🔥"
 );
 function download() {
   const inPrompt = prompt(
