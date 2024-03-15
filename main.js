@@ -7,6 +7,9 @@ const inUsername = document.getElementById("inUsername");
 const inKategori = document.getElementById("inKategori");
 const btn = document.getElementById("down");
 
+const imgDisplay = document.getElementById("imgDisplay");
+const fileInput = document.getElementById("file");
+
 fileInput.addEventListener("click", () => {
   var qrc = new QRCode(document.getElementById("qrcode"), {
     text: `tiktok.com/@${inUsername.value}`,
@@ -42,9 +45,6 @@ function getKategori() {
   const kategori = document.getElementById("kategori");
   kategori.textContent = inKategori.value;
 }
-
-const imgDisplay = document.getElementById("imgDisplay");
-const fileInput = document.getElementById("file");
 
 fileInput.onchange = function () {
   imgDisplay.src = URL.createObjectURL(fileInput.files[0]);
@@ -96,8 +96,7 @@ function download() {
   }
 }
 
-document.oncontextmenu = () => {
-};
+document.oncontextmenu = () => {};
 
 document.onkeydown = (e) => {
   if (e.key == "F12") {
@@ -112,5 +111,4 @@ document.onkeydown = (e) => {
   if (e.ctrlKey && e.key == "v") {
     return false;
   }
-  
 };
