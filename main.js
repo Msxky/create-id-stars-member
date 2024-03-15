@@ -52,10 +52,10 @@ fileInput.onchange = function () {
   imgDisplay.src = URL.createObjectURL(fileInput.files[0]);
 };
 
-alert("Untuk Versi Mobile silahkan Aktifkan Mode 'Situs Desktop' Titik 3 di Sudut kanan atas! browser Chrome") 
 alert(
   "⚠Perhatikan Contoh!, Pastikas semua sesuai urutan Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @, sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
 );
+alert("Untuk Versi Mobile silahkan Aktifkan Mode 'Situs Desktop' Titik 3 di Sudut kanan atas! browser Chrome") 
 function download() {
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
