@@ -12,7 +12,7 @@ const fileInput = document.getElementById("file");
 
 fileInput.addEventListener("click", () => {
   var qrc = new QRCode(document.getElementById("qrcode"), {
-    text: `tiktok.com/@${inUsername.value}`,
+    text: `https://www.tiktok.com/@${inUsername.value}`,
     colorDark: "#222222",
     colorLight: "#ffffff",
     // QRCode.CorrectLevel.L | QRCode.CorrectLevel.M | QRCode.CorrectLevel.H
@@ -50,9 +50,9 @@ fileInput.onchange = function () {
   imgDisplay.src = URL.createObjectURL(fileInput.files[0]);
 };
 
-// alert(
-//   "⚠Perhatikan Contoh!, Pastikas semua sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ Sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
-// );
+alert(
+  "⚠Perhatikan Contoh!, Pastikas semua sesuai Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @ Sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
+);
 function download() {
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
@@ -94,6 +94,7 @@ function download() {
       document.body.removeChild(a);
     });
   }
+  alert("Silahkan test scan QR Code ID-Card kamu Apakah sudah benar? :)")
 }
 
 document.oncontextmenu = () => {};
