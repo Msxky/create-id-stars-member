@@ -55,7 +55,11 @@ fileInput.onchange = function () {
 alert(
   "⚠Perhatikan Contoh!, Pastikas semua sesuai urutan Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @, sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
 );
+<<<<<<< HEAD
 alert("Untuk Versi Mobile Silahkan Aktifkan Mode 'Situs Dekstop' di Titik 3 Sudut Kanan atas! Pada Browser Chroom ")
+=======
+alert("Untuk Versi Mobile silahkan Aktifkan Mode 'Situs Desktop' Titik 3 di Sudut kanan atas! browser Chrome") 
+>>>>>>> d5a2ac9d2f117da710f5a1eddb78381466698b43
 function download() {
   const inPrompt = prompt(
     `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
