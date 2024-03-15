@@ -7,8 +7,16 @@ const inUsername = document.getElementById("inUsername");
 const inKategori = document.getElementById("inKategori");
 const btn = document.getElementById("down");
 
-const imgQr = document.getElementById("qrCode");
-const API = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=`;
+fileInput.addEventListener("click", () => {
+  var qrc = new QRCode(document.getElementById("qrcode"), {
+    text: `tiktok.com/@${inUsername.value}`,
+    colorDark: "#222222",
+    colorLight: "#ffffff",
+    // QRCode.CorrectLevel.L | QRCode.CorrectLevel.M | QRCode.CorrectLevel.H
+    correctLevel: QRCode.CorrectLevel.H,
+  });
+});
+// const API = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=`;
 
 function getName() {
   const inNama = document.getElementById("inNama");
@@ -26,7 +34,7 @@ function getUsername() {
   const inUsername = document.getElementById("inUsername");
   const username = document.getElementById("username");
   username.textContent = inUsername.value;
-  imgQr.src = `${API}tiktok.com/@${inUsername.value}`;
+  // imgQr.src = `${API}tiktok.com/@${inUsername.value}`;
 }
 
 function getKategori() {
@@ -87,3 +95,22 @@ function download() {
     });
   }
 }
+
+document.oncontextmenu = () => {
+};
+
+document.onkeydown = (e) => {
+  if (e.key == "F12") {
+    return false;
+  }
+  if (e.ctrlKey && e.key == "u") {
+    return false;
+  }
+  if (e.ctrlKey && e.key == "c") {
+    return false;
+  }
+  if (e.ctrlKey && e.key == "v") {
+    return false;
+  }
+  
+};

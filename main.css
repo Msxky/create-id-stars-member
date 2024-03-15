@@ -165,7 +165,8 @@ span {
   font-weight: 600;
 }
 
-.stars #qrCode {
+.stars #qrcode img {
+  border: 1px solid #FFFFFF;
   height: 50px;
   width: 50px;
 }
