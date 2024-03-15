@@ -12,9 +12,11 @@ const fileInput = document.getElementById("file");
 
 fileInput.addEventListener("click", () => {
   var qrc = new QRCode(document.getElementById("qrcode"), {
+    display: "block",
     text: `https://www.tiktok.com/@${inUsername.value}`,
     colorDark: "#222222",
     colorLight: "#ffffff",
+    // boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, var(--primary-color) 0px 0px 10px",
     // QRCode.CorrectLevel.L | QRCode.CorrectLevel.M | QRCode.CorrectLevel.H
     correctLevel: QRCode.CorrectLevel.H,
   });
@@ -65,6 +67,7 @@ function download() {
     alert(
       "Done✅, data akan di cek terlebih dahulu. silahkan cek data kamu di ('starsmember.vercel.app') 24 jam setelah create ID :)"
     );
+    alert("Silahkan test scan QR Code ID-Card kamu Apakah sudah benar? :)");
     const pesan = `Konfirmasi ID-Stars: ${inNama.value}
     %0A WhatsApp: ${inPrompt}
     %0A Nama Akun: ${inNamaAkun.value}
@@ -94,10 +97,11 @@ function download() {
       document.body.removeChild(a);
     });
   }
-  alert("Silahkan test scan QR Code ID-Card kamu Apakah sudah benar? :)")
 }
 
-document.oncontextmenu = () => {};
+document.oncontextmenu = () => {
+  return false;
+};
 
 document.onkeydown = (e) => {
   if (e.key == "F12") {
@@ -107,9 +111,6 @@ document.onkeydown = (e) => {
     return false;
   }
   if (e.ctrlKey && e.key == "c") {
-    return false;
-  }
-  if (e.ctrlKey && e.key == "v") {
     return false;
   }
 };
