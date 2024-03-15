@@ -55,7 +55,7 @@ fileInput.onchange = function () {
 alert(
   "⚠Perhatikan Contoh!, Pastikas semua sesuai urutan Contoh/Example yang ada. ⚠rules: (username) tidak menggunakan kapital dan @, sedangkan (ketegori) Wajib huruf kapital di kalimat utama dan Profil Picture wajib sama dengan akun TikTok. OK Let's Create🔥"
 );
-alert("Untuk Versi Mobile Silahkan Aktifkan Mode 'Situs Dekstop' di Titik 3 Sudut Kanan atas! Pada Browser Chroom ")
+alert("Untuk Versi Mobile Silahkan Aktifkan Mode 'Situs Dekstop' di Titik 3 Sudut Kanan atas! Pada Browser Chrome ")
 
 function download() {
   const inPrompt = prompt(
