@@ -57,6 +57,10 @@ header h6 {
   align-items: center;
 }
 
+.content-1::-webkit-scrollbar {
+  display: none;
+}
+
 .input {
   /* background: blue; */
   height: auto;

@@ -5,6 +5,7 @@ const inNama = document.getElementById("inNama");
 const inNamaAkun = document.getElementById("inNamaAkun");
 const inUsername = document.getElementById("inUsername");
 const inKategori = document.getElementById("inKategori");
+const inWA = document.getElementById("nowa");
 const btn = document.getElementById("down");
 
 const imgDisplay = document.getElementById("imgDisplay");
@@ -58,20 +59,23 @@ alert(
 alert("Untuk Versi Mobile Silahkan Aktifkan Mode 'Situs Dekstop' di Titik 3 Sudut Kanan atas! Pada Browser Chrome ")
 
 function download() {
-  const inPrompt = prompt(
-    `halo ${inNama.value}! Isi nomor WA yg sama di group starsmusic untuk konfirmasi id ke Database`
-  );
-  if (inNama.value == 0 || inUsername.value == 0 || inKategori.value == 0) {
-    btn.value = "Diisi Semuanya!";
-  } else if (inPrompt == false) {
-    alert("🚫 Jika nomor WhatsApp kosong ID tidak dapat di konfirmasi.");
+  if(inNama.value == 0){
+    location.href = "/index.html#inNama";
+  }else if(inNamaAkun.value == 0){
+    location.href = "/index.html#inNamaAkun";
+  } else if(inUsername.value == 0){
+    location.href = "/index.html#inUsername";
+  }else if(inKategori.value == 0){
+    location.href = "/index.html#inKategori";
+  } else if (inWA.value == 0) {
+    location.href = "/index.html#nowa";
   } else {
     alert(
       "Done✅, data akan di cek terlebih dahulu. silahkan cek data kamu di ('starsmember.vercel.app') 24 jam setelah create ID :)"
     );
     alert("Silahkan test scan QR Code ID-Card kamu Apakah sudah benar? :)");
     const pesan = `Konfirmasi ID-Stars: ${inNama.value}
-    %0A WhatsApp: ${inPrompt}
+    %0A WhatsApp: ${inWA.value}
     %0A Nama Akun: ${inNamaAkun.value}
     %0A Username: ${inUsername.value}
     %0A Kategori: ${inKategori.value}`;
