@@ -154,7 +154,7 @@ h3, pre {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 1.2rem 2rem 0 2rem;
+  padding: .2rem 2rem 0 2rem;
 }
 
 p {
@@ -177,7 +177,7 @@ i {
   text-align: center;
   border-bottom: 2px solid var(--primary-color);
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 span {
