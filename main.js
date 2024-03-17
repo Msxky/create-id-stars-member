@@ -89,7 +89,7 @@ function download() {
     });
 
     let id = document.getElementById("card");
-    id.style.transform = "scale(3)";
+    id.style.transform = "scale(2)";
     id.style.background = "var(--secondary-color)";
     html2canvas(id).then((canvas) => {
       id.style.background = "transparent";
