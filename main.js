@@ -102,8 +102,12 @@ function download() {
       a.click();
       document.body.removeChild(a);
     });
+    setTimeout ( function(){
+      location.reload()
+    },6000)
   }
 }
+
 
 document.oncontextmenu = () => {
   return false;
