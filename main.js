@@ -1,5 +1,5 @@
 const created = document.getElementById("created");
-created.textContent = "32 Created..";
+created.textContent = "45 Created..";
 
 const inNama = document.getElementById("inNama");
 const inNamaAkun = document.getElementById("inNamaAkun");
